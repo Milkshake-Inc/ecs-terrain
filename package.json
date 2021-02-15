@@ -1,0 +1,55 @@
+{
+	"name": "ecs-terrain",
+	"version": "1.0.0",
+	"license": "BSD-3-Clause",
+	"scripts": {
+		"start": "node ./ecs/src/cli/index.js"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSpacing": true,
+		"htmlWhitespaceSensitivity": "css",
+		"insertPragma": false,
+		"jsxBracketSameLine": false,
+		"jsxSingleQuote": true,
+		"printWidth": 200,
+		"proseWrap": "preserve",
+		"quoteProps": "as-needed",
+		"requirePragma": false,
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true,
+		"vueIndentScriptAndStyle": false
+	},
+	"dependencies": {
+		"hammerjs": "^2.0.8",
+		"open-simplex-noise": "^2.4.0",
+		"poisson-disk-sampling": "^2.2.2",
+		"seedrandom": "^3.0.5",
+		"three": "^0.125.2",
+		"tick-knock": "https://github.com/Milkshake-Inc/tick-knock.git"
+	},
+	"devDependencies": {
+		"@types/hammerjs": "^2.0.38",
+		"@types/seedrandom": "^2.4.28",
+		"capitalize": "^2.0.3",
+		"copy-webpack-plugin": "^6.2.0",
+		"git-revision-webpack-plugin": "^3.0.6",
+		"html-webpack-plugin": "^4.5.0",
+		"node-emoji": "^1.10.0",
+		"nodemon-webpack-plugin": "^4.3.2",
+		"prettier": "^2.1.2",
+		"public-ip": "^4.0.3",
+		"ts-loader": "^8.0.4",
+		"typescript": "^4.0.3",
+		"webpack": "^4.44.2",
+		"webpack-cli": "^3.3.12",
+		"webpack-dev-server": "^3.11.0",
+		"webpack-merge": "^5.1.4",
+		"webpack-node-externals": "^2.5.2",
+		"webpack-plugin-serve": "^1.1.0",
+		"webpackbar": "^4.0.0"
+	}
+}
