@@ -1,6 +1,6 @@
 import { useQueries, useState } from '@ecs/core/helpers';
 import Input from '@ecs/plugins/input/components/Input';
-import { KeySet } from '@ecs/plugins/input/Control';
+import { Controls, KeySet } from '@ecs/plugins/input/Control';
 import Keyboard from '@ecs/plugins/input/Keyboard';
 import Transform from '@ecs/plugins/math/Transform';
 import Vector3 from '@ecs/plugins/math/Vector';
@@ -39,7 +39,7 @@ export class Movement {
 }
 
 const PlayerInputs = {
-	move: Keyboard.direction(KeySet.WASD)
+	move: Controls.or(Keyboard.direction(KeySet.WASD), Keyboard.direction(KeySet.Arrows))
 };
 
 export class MovementSystem extends System {
